@@ -1,0 +1,3 @@
+java -jar XFP.jar http://www.wykop.pl/rss/index.xml | sed 's/rss.*item, //' | less
+
+java -jar XFP.jar http://dmn.jogger.pl/rss/50/ | grep -v 'guid' | sed 's/rss.*item, //' | sed 's/\[title/\n\n\[title/'
